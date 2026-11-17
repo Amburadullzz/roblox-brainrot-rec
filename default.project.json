@@ -1,0 +1,7855 @@
+{
+  "name": "brainrot-bazaar",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "Shared": {
+        "$path": "src/shared"
+      }
+    },
+    "ServerScriptService": {
+      "Server": {
+        "$path": "src/server"
+      }
+    },
+    "StarterPlayer": {
+      "$properties": {
+        "CharacterWalkSpeed": 20,
+        "EnableMouseLockOption": false
+      },
+      "StarterPlayerScripts": {
+        "Client": {
+          "$path": "src/client"
+        }
+      },
+      "StarterCharacterScripts": {}
+    },
+    "Workspace": {
+      "$properties": {
+        "FilteringEnabled": true,
+        "Gravity": 196.2
+      },
+      "Ground": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.29,
+            0.55,
+            0.24
+          ],
+          "Material": "Grass",
+          "Shape": "Block",
+          "Size": [
+            420,
+            1,
+            420
+          ],
+          "CFrame": [
+            0,
+            -0.5,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Shoreline": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.16,
+            0.55,
+            0.85
+          ],
+          "Material": "Water",
+          "Shape": "Block",
+          "Size": [
+            420,
+            1,
+            24
+          ],
+          "CFrame": [
+            0,
+            -0.6,
+            -198,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "BazaarDeck": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.72,
+            0.71,
+            0.68
+          ],
+          "Material": "Slate",
+          "Shape": "Block",
+          "Size": [
+            64,
+            3,
+            64
+          ],
+          "CFrame": [
+            0,
+            1.5,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "BazaarTrim": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.1,
+            0.95,
+            0.95
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            66,
+            0.4,
+            66
+          ],
+          "CFrame": [
+            0,
+            3.1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "VaultPedestal": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.18,
+            0.2,
+            0.28
+          ],
+          "Material": "Concrete",
+          "Shape": "Block",
+          "Size": [
+            12,
+            6,
+            12
+          ],
+          "CFrame": [
+            0,
+            6,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "VaultGlow": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            1,
+            0.76,
+            0.2
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            13,
+            0.4,
+            13
+          ],
+          "CFrame": [
+            0,
+            9.2,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "VaultCore": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.1,
+            0.95,
+            0.95
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            5,
+            5,
+            5
+          ],
+          "CFrame": [
+            0,
+            11,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth",
+          "Transparency": 0.15
+        }
+      },
+      "ArchPillarW": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.45,
+            0.48
+          ],
+          "Material": "Concrete",
+          "Shape": "Block",
+          "Size": [
+            3,
+            16,
+            3
+          ],
+          "CFrame": [
+            -27,
+            11,
+            -30,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "ArchLampW": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.95,
+            0.3,
+            0.6
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            4,
+            2,
+            4
+          ],
+          "CFrame": [
+            -27,
+            19.5,
+            -30,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "ArchPillarE": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.45,
+            0.48
+          ],
+          "Material": "Concrete",
+          "Shape": "Block",
+          "Size": [
+            3,
+            16,
+            3
+          ],
+          "CFrame": [
+            27,
+            11,
+            -30,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "ArchLampE": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.95,
+            0.3,
+            0.6
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            4,
+            2,
+            4
+          ],
+          "CFrame": [
+            27,
+            19.5,
+            -30,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "ArchBeam": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.45,
+            0.48
+          ],
+          "Material": "Concrete",
+          "Shape": "Block",
+          "Size": [
+            57,
+            2.5,
+            3
+          ],
+          "CFrame": [
+            0,
+            21,
+            -30,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "ArchSign": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.18,
+            0.2,
+            0.28
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            40,
+            5,
+            1.2
+          ],
+          "CFrame": [
+            0,
+            24,
+            -30,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "ArchSignGlow": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.1,
+            0.95,
+            0.95
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            40.6,
+            5.6,
+            0.4
+          ],
+          "CFrame": [
+            0,
+            24,
+            -29.2,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PodPad1": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.66,
+            0.67,
+            0.71
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            7,
+            0.6,
+            7
+          ],
+          "CFrame": [
+            0,
+            3.3,
+            18,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PodPost1": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.45,
+            0.48
+          ],
+          "Material": "Concrete",
+          "Shape": "Block",
+          "Size": [
+            0.8,
+            4,
+            0.8
+          ],
+          "CFrame": [
+            3.2,
+            5.5,
+            21.2,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PodLamp1": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.66,
+            0.67,
+            0.71
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            1.6,
+            1.6,
+            1.6
+          ],
+          "CFrame": [
+            3.2,
+            7.8,
+            21.2,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PodPad2": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.66,
+            0.67,
+            0.71
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            7,
+            0.6,
+            7
+          ],
+          "CFrame": [
+            15.588457268119894,
+            3.3,
+            9.000000000000002,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PodPost2": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.45,
+            0.48
+          ],
+          "Material": "Concrete",
+          "Shape": "Block",
+          "Size": [
+            0.8,
+            4,
+            0.8
+          ],
+          "CFrame": [
+            18.788457268119895,
+            5.5,
+            12.200000000000003,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PodLamp2": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.66,
+            0.67,
+            0.71
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            1.6,
+            1.6,
+            1.6
+          ],
+          "CFrame": [
+            18.788457268119895,
+            7.8,
+            12.200000000000003,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PodPad3": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.38,
+            0.84,
+            0.42
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            7,
+            0.6,
+            7
+          ],
+          "CFrame": [
+            15.588457268119896,
+            3.3,
+            -8.999999999999996,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PodPost3": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.45,
+            0.48
+          ],
+          "Material": "Concrete",
+          "Shape": "Block",
+          "Size": [
+            0.8,
+            4,
+            0.8
+          ],
+          "CFrame": [
+            18.788457268119895,
+            5.5,
+            -5.799999999999996,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PodLamp3": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.38,
+            0.84,
+            0.42
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            1.6,
+            1.6,
+            1.6
+          ],
+          "CFrame": [
+            18.788457268119895,
+            7.8,
+            -5.799999999999996,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PodPad4": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.38,
+            0.84,
+            0.42
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            7,
+            0.6,
+            7
+          ],
+          "CFrame": [
+            2.204364238465236e-15,
+            3.3,
+            -18,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PodPost4": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.45,
+            0.48
+          ],
+          "Material": "Concrete",
+          "Shape": "Block",
+          "Size": [
+            0.8,
+            4,
+            0.8
+          ],
+          "CFrame": [
+            3.2000000000000024,
+            5.5,
+            -14.8,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PodLamp4": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.38,
+            0.84,
+            0.42
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            1.6,
+            1.6,
+            1.6
+          ],
+          "CFrame": [
+            3.2000000000000024,
+            7.8,
+            -14.8,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PodPad5": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.34,
+            0.6,
+            1
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            7,
+            0.6,
+            7
+          ],
+          "CFrame": [
+            -15.588457268119893,
+            3.3,
+            -9.000000000000007,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PodPost5": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.45,
+            0.48
+          ],
+          "Material": "Concrete",
+          "Shape": "Block",
+          "Size": [
+            0.8,
+            4,
+            0.8
+          ],
+          "CFrame": [
+            -12.388457268119893,
+            5.5,
+            -5.800000000000007,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PodLamp5": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.34,
+            0.6,
+            1
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            1.6,
+            1.6,
+            1.6
+          ],
+          "CFrame": [
+            -12.388457268119893,
+            7.8,
+            -5.800000000000007,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PodPad6": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.34,
+            0.6,
+            1
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            7,
+            0.6,
+            7
+          ],
+          "CFrame": [
+            -15.588457268119894,
+            3.3,
+            9.000000000000002,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PodPost6": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.45,
+            0.48
+          ],
+          "Material": "Concrete",
+          "Shape": "Block",
+          "Size": [
+            0.8,
+            4,
+            0.8
+          ],
+          "CFrame": [
+            -12.388457268119893,
+            5.5,
+            12.200000000000003,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PodLamp6": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.34,
+            0.6,
+            1
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            1.6,
+            1.6,
+            1.6
+          ],
+          "CFrame": [
+            -12.388457268119893,
+            7.8,
+            12.200000000000003,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PodPad7": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.73,
+            0.42,
+            1
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            7,
+            0.6,
+            7
+          ],
+          "CFrame": [
+            0,
+            3.3,
+            28,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PodPost7": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.45,
+            0.48
+          ],
+          "Material": "Concrete",
+          "Shape": "Block",
+          "Size": [
+            0.8,
+            4,
+            0.8
+          ],
+          "CFrame": [
+            3.2,
+            5.5,
+            31.2,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PodLamp7": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.73,
+            0.42,
+            1
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            1.6,
+            1.6,
+            1.6
+          ],
+          "CFrame": [
+            3.2,
+            7.8,
+            31.2,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PodPad8": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.73,
+            0.42,
+            1
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            7,
+            0.6,
+            7
+          ],
+          "CFrame": [
+            24.24871130596428,
+            3.3,
+            14.000000000000004,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PodPost8": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.45,
+            0.48
+          ],
+          "Material": "Concrete",
+          "Shape": "Block",
+          "Size": [
+            0.8,
+            4,
+            0.8
+          ],
+          "CFrame": [
+            27.44871130596428,
+            5.5,
+            17.200000000000003,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PodLamp8": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.73,
+            0.42,
+            1
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            1.6,
+            1.6,
+            1.6
+          ],
+          "CFrame": [
+            27.44871130596428,
+            7.8,
+            17.200000000000003,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PodPad9": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            1,
+            0.77,
+            0.25
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            7,
+            0.6,
+            7
+          ],
+          "CFrame": [
+            24.248711305964285,
+            3.3,
+            -13.999999999999993,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PodPost9": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.45,
+            0.48
+          ],
+          "Material": "Concrete",
+          "Shape": "Block",
+          "Size": [
+            0.8,
+            4,
+            0.8
+          ],
+          "CFrame": [
+            27.448711305964284,
+            5.5,
+            -10.799999999999994,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PodLamp9": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            1,
+            0.77,
+            0.25
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            1.6,
+            1.6,
+            1.6
+          ],
+          "CFrame": [
+            27.448711305964284,
+            7.8,
+            -10.799999999999994,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PodPad10": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            1,
+            0.77,
+            0.25
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            7,
+            0.6,
+            7
+          ],
+          "CFrame": [
+            3.429011037612589e-15,
+            3.3,
+            -28,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PodPost10": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.45,
+            0.48
+          ],
+          "Material": "Concrete",
+          "Shape": "Block",
+          "Size": [
+            0.8,
+            4,
+            0.8
+          ],
+          "CFrame": [
+            3.2000000000000037,
+            5.5,
+            -24.8,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PodLamp10": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            1,
+            0.77,
+            0.25
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            1.6,
+            1.6,
+            1.6
+          ],
+          "CFrame": [
+            3.2000000000000037,
+            7.8,
+            -24.8,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PodPad11": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            1,
+            0.36,
+            0.36
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            7,
+            0.6,
+            7
+          ],
+          "CFrame": [
+            -24.248711305964278,
+            3.3,
+            -14.000000000000012,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PodPost11": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.45,
+            0.48
+          ],
+          "Material": "Concrete",
+          "Shape": "Block",
+          "Size": [
+            0.8,
+            4,
+            0.8
+          ],
+          "CFrame": [
+            -21.04871130596428,
+            5.5,
+            -10.800000000000011,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PodLamp11": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            1,
+            0.36,
+            0.36
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            1.6,
+            1.6,
+            1.6
+          ],
+          "CFrame": [
+            -21.04871130596428,
+            7.8,
+            -10.800000000000011,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PodPad12": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.25,
+            0.96,
+            0.88
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            7,
+            0.6,
+            7
+          ],
+          "CFrame": [
+            -24.24871130596428,
+            3.3,
+            14.000000000000004,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PodPost12": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.45,
+            0.48
+          ],
+          "Material": "Concrete",
+          "Shape": "Block",
+          "Size": [
+            0.8,
+            4,
+            0.8
+          ],
+          "CFrame": [
+            -21.048711305964282,
+            5.5,
+            17.200000000000003,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PodLamp12": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.25,
+            0.96,
+            0.88
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            1.6,
+            1.6,
+            1.6
+          ],
+          "CFrame": [
+            -21.048711305964282,
+            7.8,
+            17.200000000000003,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "RebirthAltar": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            1,
+            0.76,
+            0.2
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            12,
+            1.6,
+            12
+          ],
+          "CFrame": [
+            0,
+            3.9,
+            30,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "RebirthPlinth": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.18,
+            0.2,
+            0.28
+          ],
+          "Material": "Concrete",
+          "Shape": "Block",
+          "Size": [
+            4,
+            2.4,
+            4
+          ],
+          "CFrame": [
+            0,
+            5,
+            30,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot1Deck": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.72,
+            0.71,
+            0.68
+          ],
+          "Material": "Slate",
+          "Shape": "Block",
+          "Size": [
+            34,
+            1,
+            34
+          ],
+          "CFrame": [
+            0,
+            0.5,
+            -100,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot1Trim": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.45,
+            0.48
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            35,
+            0.3,
+            35
+          ],
+          "CFrame": [
+            0,
+            1.1,
+            -100,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot1Slot1": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.18,
+            0.2,
+            0.28
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            7,
+            0.4,
+            7
+          ],
+          "CFrame": [
+            -10,
+            1.2,
+            -105,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot1SlotGlow1": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.1,
+            0.95,
+            0.95
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            7.6,
+            0.2,
+            0.4
+          ],
+          "CFrame": [
+            -10,
+            1.45,
+            -105,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth",
+          "Transparency": 0.35
+        }
+      },
+      "Plot1Slot2": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.18,
+            0.2,
+            0.28
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            7,
+            0.4,
+            7
+          ],
+          "CFrame": [
+            0,
+            1.2,
+            -105,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot1SlotGlow2": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.1,
+            0.95,
+            0.95
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            7.6,
+            0.2,
+            0.4
+          ],
+          "CFrame": [
+            0,
+            1.45,
+            -105,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth",
+          "Transparency": 0.35
+        }
+      },
+      "Plot1Slot3": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.18,
+            0.2,
+            0.28
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            7,
+            0.4,
+            7
+          ],
+          "CFrame": [
+            10,
+            1.2,
+            -105,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot1SlotGlow3": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.1,
+            0.95,
+            0.95
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            7.6,
+            0.2,
+            0.4
+          ],
+          "CFrame": [
+            10,
+            1.45,
+            -105,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth",
+          "Transparency": 0.35
+        }
+      },
+      "Plot1Slot4": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.18,
+            0.2,
+            0.28
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            7,
+            0.4,
+            7
+          ],
+          "CFrame": [
+            -10,
+            1.2,
+            -95,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot1SlotGlow4": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.1,
+            0.95,
+            0.95
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            7.6,
+            0.2,
+            0.4
+          ],
+          "CFrame": [
+            -10,
+            1.45,
+            -95,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth",
+          "Transparency": 0.35
+        }
+      },
+      "Plot1Slot5": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.18,
+            0.2,
+            0.28
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            7,
+            0.4,
+            7
+          ],
+          "CFrame": [
+            0,
+            1.2,
+            -95,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot1SlotGlow5": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.1,
+            0.95,
+            0.95
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            7.6,
+            0.2,
+            0.4
+          ],
+          "CFrame": [
+            0,
+            1.45,
+            -95,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth",
+          "Transparency": 0.35
+        }
+      },
+      "Plot1Slot6": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.18,
+            0.2,
+            0.28
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            7,
+            0.4,
+            7
+          ],
+          "CFrame": [
+            10,
+            1.2,
+            -95,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot1SlotGlow6": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.1,
+            0.95,
+            0.95
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            7.6,
+            0.2,
+            0.4
+          ],
+          "CFrame": [
+            10,
+            1.45,
+            -95,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth",
+          "Transparency": 0.35
+        }
+      },
+      "Plot1FenceW": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.3,
+            0.18
+          ],
+          "Material": "Wood",
+          "Shape": "Block",
+          "Size": [
+            1,
+            4,
+            34
+          ],
+          "CFrame": [
+            -17,
+            2,
+            -100,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot1FenceE": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.3,
+            0.18
+          ],
+          "Material": "Wood",
+          "Shape": "Block",
+          "Size": [
+            1,
+            4,
+            34
+          ],
+          "CFrame": [
+            17,
+            2,
+            -100,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot1FenceN": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.3,
+            0.18
+          ],
+          "Material": "Wood",
+          "Shape": "Block",
+          "Size": [
+            34,
+            4,
+            1
+          ],
+          "CFrame": [
+            0,
+            2,
+            -117,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot1SignPost": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.3,
+            0.18
+          ],
+          "Material": "Wood",
+          "Shape": "Block",
+          "Size": [
+            1,
+            8,
+            1
+          ],
+          "CFrame": [
+            14,
+            4,
+            -86,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot1Sign": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.18,
+            0.2,
+            0.28
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            7,
+            3,
+            0.6
+          ],
+          "CFrame": [
+            14,
+            8.6,
+            -86,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot2Deck": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.72,
+            0.71,
+            0.68
+          ],
+          "Material": "Slate",
+          "Shape": "Block",
+          "Size": [
+            34,
+            1,
+            34
+          ],
+          "CFrame": [
+            -100,
+            0.5,
+            -50,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot2Trim": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.45,
+            0.48
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            35,
+            0.3,
+            35
+          ],
+          "CFrame": [
+            -100,
+            1.1,
+            -50,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot2Slot1": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.18,
+            0.2,
+            0.28
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            7,
+            0.4,
+            7
+          ],
+          "CFrame": [
+            -110,
+            1.2,
+            -55,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot2SlotGlow1": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.1,
+            0.95,
+            0.95
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            7.6,
+            0.2,
+            0.4
+          ],
+          "CFrame": [
+            -110,
+            1.45,
+            -55,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth",
+          "Transparency": 0.35
+        }
+      },
+      "Plot2Slot2": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.18,
+            0.2,
+            0.28
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            7,
+            0.4,
+            7
+          ],
+          "CFrame": [
+            -100,
+            1.2,
+            -55,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot2SlotGlow2": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.1,
+            0.95,
+            0.95
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            7.6,
+            0.2,
+            0.4
+          ],
+          "CFrame": [
+            -100,
+            1.45,
+            -55,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth",
+          "Transparency": 0.35
+        }
+      },
+      "Plot2Slot3": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.18,
+            0.2,
+            0.28
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            7,
+            0.4,
+            7
+          ],
+          "CFrame": [
+            -90,
+            1.2,
+            -55,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot2SlotGlow3": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.1,
+            0.95,
+            0.95
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            7.6,
+            0.2,
+            0.4
+          ],
+          "CFrame": [
+            -90,
+            1.45,
+            -55,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth",
+          "Transparency": 0.35
+        }
+      },
+      "Plot2Slot4": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.18,
+            0.2,
+            0.28
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            7,
+            0.4,
+            7
+          ],
+          "CFrame": [
+            -110,
+            1.2,
+            -45,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot2SlotGlow4": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.1,
+            0.95,
+            0.95
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            7.6,
+            0.2,
+            0.4
+          ],
+          "CFrame": [
+            -110,
+            1.45,
+            -45,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth",
+          "Transparency": 0.35
+        }
+      },
+      "Plot2Slot5": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.18,
+            0.2,
+            0.28
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            7,
+            0.4,
+            7
+          ],
+          "CFrame": [
+            -100,
+            1.2,
+            -45,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot2SlotGlow5": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.1,
+            0.95,
+            0.95
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            7.6,
+            0.2,
+            0.4
+          ],
+          "CFrame": [
+            -100,
+            1.45,
+            -45,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth",
+          "Transparency": 0.35
+        }
+      },
+      "Plot2Slot6": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.18,
+            0.2,
+            0.28
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            7,
+            0.4,
+            7
+          ],
+          "CFrame": [
+            -90,
+            1.2,
+            -45,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot2SlotGlow6": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.1,
+            0.95,
+            0.95
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            7.6,
+            0.2,
+            0.4
+          ],
+          "CFrame": [
+            -90,
+            1.45,
+            -45,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth",
+          "Transparency": 0.35
+        }
+      },
+      "Plot2FenceW": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.3,
+            0.18
+          ],
+          "Material": "Wood",
+          "Shape": "Block",
+          "Size": [
+            1,
+            4,
+            34
+          ],
+          "CFrame": [
+            -117,
+            2,
+            -50,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot2FenceE": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.3,
+            0.18
+          ],
+          "Material": "Wood",
+          "Shape": "Block",
+          "Size": [
+            1,
+            4,
+            34
+          ],
+          "CFrame": [
+            -83,
+            2,
+            -50,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot2FenceN": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.3,
+            0.18
+          ],
+          "Material": "Wood",
+          "Shape": "Block",
+          "Size": [
+            34,
+            4,
+            1
+          ],
+          "CFrame": [
+            -100,
+            2,
+            -67,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot2SignPost": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.3,
+            0.18
+          ],
+          "Material": "Wood",
+          "Shape": "Block",
+          "Size": [
+            1,
+            8,
+            1
+          ],
+          "CFrame": [
+            -86,
+            4,
+            -36,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot2Sign": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.18,
+            0.2,
+            0.28
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            7,
+            3,
+            0.6
+          ],
+          "CFrame": [
+            -86,
+            8.6,
+            -36,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot3Deck": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.72,
+            0.71,
+            0.68
+          ],
+          "Material": "Slate",
+          "Shape": "Block",
+          "Size": [
+            34,
+            1,
+            34
+          ],
+          "CFrame": [
+            100,
+            0.5,
+            -50,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot3Trim": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.45,
+            0.48
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            35,
+            0.3,
+            35
+          ],
+          "CFrame": [
+            100,
+            1.1,
+            -50,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot3Slot1": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.18,
+            0.2,
+            0.28
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            7,
+            0.4,
+            7
+          ],
+          "CFrame": [
+            90,
+            1.2,
+            -55,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot3SlotGlow1": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.1,
+            0.95,
+            0.95
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            7.6,
+            0.2,
+            0.4
+          ],
+          "CFrame": [
+            90,
+            1.45,
+            -55,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth",
+          "Transparency": 0.35
+        }
+      },
+      "Plot3Slot2": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.18,
+            0.2,
+            0.28
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            7,
+            0.4,
+            7
+          ],
+          "CFrame": [
+            100,
+            1.2,
+            -55,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot3SlotGlow2": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.1,
+            0.95,
+            0.95
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            7.6,
+            0.2,
+            0.4
+          ],
+          "CFrame": [
+            100,
+            1.45,
+            -55,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth",
+          "Transparency": 0.35
+        }
+      },
+      "Plot3Slot3": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.18,
+            0.2,
+            0.28
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            7,
+            0.4,
+            7
+          ],
+          "CFrame": [
+            110,
+            1.2,
+            -55,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot3SlotGlow3": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.1,
+            0.95,
+            0.95
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            7.6,
+            0.2,
+            0.4
+          ],
+          "CFrame": [
+            110,
+            1.45,
+            -55,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth",
+          "Transparency": 0.35
+        }
+      },
+      "Plot3Slot4": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.18,
+            0.2,
+            0.28
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            7,
+            0.4,
+            7
+          ],
+          "CFrame": [
+            90,
+            1.2,
+            -45,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot3SlotGlow4": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.1,
+            0.95,
+            0.95
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            7.6,
+            0.2,
+            0.4
+          ],
+          "CFrame": [
+            90,
+            1.45,
+            -45,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth",
+          "Transparency": 0.35
+        }
+      },
+      "Plot3Slot5": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.18,
+            0.2,
+            0.28
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            7,
+            0.4,
+            7
+          ],
+          "CFrame": [
+            100,
+            1.2,
+            -45,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot3SlotGlow5": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.1,
+            0.95,
+            0.95
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            7.6,
+            0.2,
+            0.4
+          ],
+          "CFrame": [
+            100,
+            1.45,
+            -45,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth",
+          "Transparency": 0.35
+        }
+      },
+      "Plot3Slot6": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.18,
+            0.2,
+            0.28
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            7,
+            0.4,
+            7
+          ],
+          "CFrame": [
+            110,
+            1.2,
+            -45,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot3SlotGlow6": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.1,
+            0.95,
+            0.95
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            7.6,
+            0.2,
+            0.4
+          ],
+          "CFrame": [
+            110,
+            1.45,
+            -45,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth",
+          "Transparency": 0.35
+        }
+      },
+      "Plot3FenceW": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.3,
+            0.18
+          ],
+          "Material": "Wood",
+          "Shape": "Block",
+          "Size": [
+            1,
+            4,
+            34
+          ],
+          "CFrame": [
+            83,
+            2,
+            -50,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot3FenceE": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.3,
+            0.18
+          ],
+          "Material": "Wood",
+          "Shape": "Block",
+          "Size": [
+            1,
+            4,
+            34
+          ],
+          "CFrame": [
+            117,
+            2,
+            -50,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot3FenceN": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.3,
+            0.18
+          ],
+          "Material": "Wood",
+          "Shape": "Block",
+          "Size": [
+            34,
+            4,
+            1
+          ],
+          "CFrame": [
+            100,
+            2,
+            -67,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot3SignPost": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.3,
+            0.18
+          ],
+          "Material": "Wood",
+          "Shape": "Block",
+          "Size": [
+            1,
+            8,
+            1
+          ],
+          "CFrame": [
+            114,
+            4,
+            -36,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot3Sign": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.18,
+            0.2,
+            0.28
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            7,
+            3,
+            0.6
+          ],
+          "CFrame": [
+            114,
+            8.6,
+            -36,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot4Deck": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.72,
+            0.71,
+            0.68
+          ],
+          "Material": "Slate",
+          "Shape": "Block",
+          "Size": [
+            34,
+            1,
+            34
+          ],
+          "CFrame": [
+            -100,
+            0.5,
+            60,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot4Trim": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.45,
+            0.48
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            35,
+            0.3,
+            35
+          ],
+          "CFrame": [
+            -100,
+            1.1,
+            60,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot4Slot1": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.18,
+            0.2,
+            0.28
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            7,
+            0.4,
+            7
+          ],
+          "CFrame": [
+            -110,
+            1.2,
+            55,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot4SlotGlow1": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.1,
+            0.95,
+            0.95
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            7.6,
+            0.2,
+            0.4
+          ],
+          "CFrame": [
+            -110,
+            1.45,
+            55,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth",
+          "Transparency": 0.35
+        }
+      },
+      "Plot4Slot2": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.18,
+            0.2,
+            0.28
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            7,
+            0.4,
+            7
+          ],
+          "CFrame": [
+            -100,
+            1.2,
+            55,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot4SlotGlow2": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.1,
+            0.95,
+            0.95
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            7.6,
+            0.2,
+            0.4
+          ],
+          "CFrame": [
+            -100,
+            1.45,
+            55,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth",
+          "Transparency": 0.35
+        }
+      },
+      "Plot4Slot3": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.18,
+            0.2,
+            0.28
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            7,
+            0.4,
+            7
+          ],
+          "CFrame": [
+            -90,
+            1.2,
+            55,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot4SlotGlow3": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.1,
+            0.95,
+            0.95
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            7.6,
+            0.2,
+            0.4
+          ],
+          "CFrame": [
+            -90,
+            1.45,
+            55,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth",
+          "Transparency": 0.35
+        }
+      },
+      "Plot4Slot4": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.18,
+            0.2,
+            0.28
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            7,
+            0.4,
+            7
+          ],
+          "CFrame": [
+            -110,
+            1.2,
+            65,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot4SlotGlow4": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.1,
+            0.95,
+            0.95
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            7.6,
+            0.2,
+            0.4
+          ],
+          "CFrame": [
+            -110,
+            1.45,
+            65,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth",
+          "Transparency": 0.35
+        }
+      },
+      "Plot4Slot5": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.18,
+            0.2,
+            0.28
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            7,
+            0.4,
+            7
+          ],
+          "CFrame": [
+            -100,
+            1.2,
+            65,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot4SlotGlow5": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.1,
+            0.95,
+            0.95
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            7.6,
+            0.2,
+            0.4
+          ],
+          "CFrame": [
+            -100,
+            1.45,
+            65,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth",
+          "Transparency": 0.35
+        }
+      },
+      "Plot4Slot6": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.18,
+            0.2,
+            0.28
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            7,
+            0.4,
+            7
+          ],
+          "CFrame": [
+            -90,
+            1.2,
+            65,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot4SlotGlow6": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.1,
+            0.95,
+            0.95
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            7.6,
+            0.2,
+            0.4
+          ],
+          "CFrame": [
+            -90,
+            1.45,
+            65,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth",
+          "Transparency": 0.35
+        }
+      },
+      "Plot4FenceW": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.3,
+            0.18
+          ],
+          "Material": "Wood",
+          "Shape": "Block",
+          "Size": [
+            1,
+            4,
+            34
+          ],
+          "CFrame": [
+            -117,
+            2,
+            60,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot4FenceE": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.3,
+            0.18
+          ],
+          "Material": "Wood",
+          "Shape": "Block",
+          "Size": [
+            1,
+            4,
+            34
+          ],
+          "CFrame": [
+            -83,
+            2,
+            60,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot4FenceN": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.3,
+            0.18
+          ],
+          "Material": "Wood",
+          "Shape": "Block",
+          "Size": [
+            34,
+            4,
+            1
+          ],
+          "CFrame": [
+            -100,
+            2,
+            43,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot4SignPost": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.3,
+            0.18
+          ],
+          "Material": "Wood",
+          "Shape": "Block",
+          "Size": [
+            1,
+            8,
+            1
+          ],
+          "CFrame": [
+            -86,
+            4,
+            74,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot4Sign": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.18,
+            0.2,
+            0.28
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            7,
+            3,
+            0.6
+          ],
+          "CFrame": [
+            -86,
+            8.6,
+            74,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot5Deck": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.72,
+            0.71,
+            0.68
+          ],
+          "Material": "Slate",
+          "Shape": "Block",
+          "Size": [
+            34,
+            1,
+            34
+          ],
+          "CFrame": [
+            100,
+            0.5,
+            60,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot5Trim": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.45,
+            0.48
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            35,
+            0.3,
+            35
+          ],
+          "CFrame": [
+            100,
+            1.1,
+            60,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot5Slot1": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.18,
+            0.2,
+            0.28
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            7,
+            0.4,
+            7
+          ],
+          "CFrame": [
+            90,
+            1.2,
+            55,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot5SlotGlow1": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.1,
+            0.95,
+            0.95
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            7.6,
+            0.2,
+            0.4
+          ],
+          "CFrame": [
+            90,
+            1.45,
+            55,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth",
+          "Transparency": 0.35
+        }
+      },
+      "Plot5Slot2": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.18,
+            0.2,
+            0.28
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            7,
+            0.4,
+            7
+          ],
+          "CFrame": [
+            100,
+            1.2,
+            55,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot5SlotGlow2": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.1,
+            0.95,
+            0.95
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            7.6,
+            0.2,
+            0.4
+          ],
+          "CFrame": [
+            100,
+            1.45,
+            55,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth",
+          "Transparency": 0.35
+        }
+      },
+      "Plot5Slot3": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.18,
+            0.2,
+            0.28
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            7,
+            0.4,
+            7
+          ],
+          "CFrame": [
+            110,
+            1.2,
+            55,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot5SlotGlow3": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.1,
+            0.95,
+            0.95
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            7.6,
+            0.2,
+            0.4
+          ],
+          "CFrame": [
+            110,
+            1.45,
+            55,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth",
+          "Transparency": 0.35
+        }
+      },
+      "Plot5Slot4": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.18,
+            0.2,
+            0.28
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            7,
+            0.4,
+            7
+          ],
+          "CFrame": [
+            90,
+            1.2,
+            65,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot5SlotGlow4": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.1,
+            0.95,
+            0.95
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            7.6,
+            0.2,
+            0.4
+          ],
+          "CFrame": [
+            90,
+            1.45,
+            65,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth",
+          "Transparency": 0.35
+        }
+      },
+      "Plot5Slot5": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.18,
+            0.2,
+            0.28
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            7,
+            0.4,
+            7
+          ],
+          "CFrame": [
+            100,
+            1.2,
+            65,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot5SlotGlow5": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.1,
+            0.95,
+            0.95
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            7.6,
+            0.2,
+            0.4
+          ],
+          "CFrame": [
+            100,
+            1.45,
+            65,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth",
+          "Transparency": 0.35
+        }
+      },
+      "Plot5Slot6": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.18,
+            0.2,
+            0.28
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            7,
+            0.4,
+            7
+          ],
+          "CFrame": [
+            110,
+            1.2,
+            65,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot5SlotGlow6": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.1,
+            0.95,
+            0.95
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            7.6,
+            0.2,
+            0.4
+          ],
+          "CFrame": [
+            110,
+            1.45,
+            65,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth",
+          "Transparency": 0.35
+        }
+      },
+      "Plot5FenceW": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.3,
+            0.18
+          ],
+          "Material": "Wood",
+          "Shape": "Block",
+          "Size": [
+            1,
+            4,
+            34
+          ],
+          "CFrame": [
+            83,
+            2,
+            60,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot5FenceE": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.3,
+            0.18
+          ],
+          "Material": "Wood",
+          "Shape": "Block",
+          "Size": [
+            1,
+            4,
+            34
+          ],
+          "CFrame": [
+            117,
+            2,
+            60,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot5FenceN": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.3,
+            0.18
+          ],
+          "Material": "Wood",
+          "Shape": "Block",
+          "Size": [
+            34,
+            4,
+            1
+          ],
+          "CFrame": [
+            100,
+            2,
+            43,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot5SignPost": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.3,
+            0.18
+          ],
+          "Material": "Wood",
+          "Shape": "Block",
+          "Size": [
+            1,
+            8,
+            1
+          ],
+          "CFrame": [
+            114,
+            4,
+            74,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot5Sign": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.18,
+            0.2,
+            0.28
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            7,
+            3,
+            0.6
+          ],
+          "CFrame": [
+            114,
+            8.6,
+            74,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot6Deck": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.72,
+            0.71,
+            0.68
+          ],
+          "Material": "Slate",
+          "Shape": "Block",
+          "Size": [
+            34,
+            1,
+            34
+          ],
+          "CFrame": [
+            0,
+            0.5,
+            105,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot6Trim": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.45,
+            0.48
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            35,
+            0.3,
+            35
+          ],
+          "CFrame": [
+            0,
+            1.1,
+            105,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot6Slot1": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.18,
+            0.2,
+            0.28
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            7,
+            0.4,
+            7
+          ],
+          "CFrame": [
+            -10,
+            1.2,
+            100,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot6SlotGlow1": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.1,
+            0.95,
+            0.95
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            7.6,
+            0.2,
+            0.4
+          ],
+          "CFrame": [
+            -10,
+            1.45,
+            100,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth",
+          "Transparency": 0.35
+        }
+      },
+      "Plot6Slot2": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.18,
+            0.2,
+            0.28
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            7,
+            0.4,
+            7
+          ],
+          "CFrame": [
+            0,
+            1.2,
+            100,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot6SlotGlow2": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.1,
+            0.95,
+            0.95
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            7.6,
+            0.2,
+            0.4
+          ],
+          "CFrame": [
+            0,
+            1.45,
+            100,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth",
+          "Transparency": 0.35
+        }
+      },
+      "Plot6Slot3": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.18,
+            0.2,
+            0.28
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            7,
+            0.4,
+            7
+          ],
+          "CFrame": [
+            10,
+            1.2,
+            100,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot6SlotGlow3": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.1,
+            0.95,
+            0.95
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            7.6,
+            0.2,
+            0.4
+          ],
+          "CFrame": [
+            10,
+            1.45,
+            100,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth",
+          "Transparency": 0.35
+        }
+      },
+      "Plot6Slot4": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.18,
+            0.2,
+            0.28
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            7,
+            0.4,
+            7
+          ],
+          "CFrame": [
+            -10,
+            1.2,
+            110,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot6SlotGlow4": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.1,
+            0.95,
+            0.95
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            7.6,
+            0.2,
+            0.4
+          ],
+          "CFrame": [
+            -10,
+            1.45,
+            110,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth",
+          "Transparency": 0.35
+        }
+      },
+      "Plot6Slot5": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.18,
+            0.2,
+            0.28
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            7,
+            0.4,
+            7
+          ],
+          "CFrame": [
+            0,
+            1.2,
+            110,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot6SlotGlow5": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.1,
+            0.95,
+            0.95
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            7.6,
+            0.2,
+            0.4
+          ],
+          "CFrame": [
+            0,
+            1.45,
+            110,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth",
+          "Transparency": 0.35
+        }
+      },
+      "Plot6Slot6": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.18,
+            0.2,
+            0.28
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            7,
+            0.4,
+            7
+          ],
+          "CFrame": [
+            10,
+            1.2,
+            110,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot6SlotGlow6": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.1,
+            0.95,
+            0.95
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            7.6,
+            0.2,
+            0.4
+          ],
+          "CFrame": [
+            10,
+            1.45,
+            110,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth",
+          "Transparency": 0.35
+        }
+      },
+      "Plot6FenceW": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.3,
+            0.18
+          ],
+          "Material": "Wood",
+          "Shape": "Block",
+          "Size": [
+            1,
+            4,
+            34
+          ],
+          "CFrame": [
+            -17,
+            2,
+            105,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot6FenceE": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.3,
+            0.18
+          ],
+          "Material": "Wood",
+          "Shape": "Block",
+          "Size": [
+            1,
+            4,
+            34
+          ],
+          "CFrame": [
+            17,
+            2,
+            105,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot6FenceN": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.3,
+            0.18
+          ],
+          "Material": "Wood",
+          "Shape": "Block",
+          "Size": [
+            34,
+            4,
+            1
+          ],
+          "CFrame": [
+            0,
+            2,
+            88,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot6SignPost": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.3,
+            0.18
+          ],
+          "Material": "Wood",
+          "Shape": "Block",
+          "Size": [
+            1,
+            8,
+            1
+          ],
+          "CFrame": [
+            14,
+            4,
+            119,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Plot6Sign": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.18,
+            0.2,
+            0.28
+          ],
+          "Material": "SmoothPlastic",
+          "Shape": "Block",
+          "Size": [
+            7,
+            3,
+            0.6
+          ],
+          "CFrame": [
+            14,
+            8.6,
+            119,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "SpawnDeck": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.45,
+            0.48
+          ],
+          "Material": "Slate",
+          "Shape": "Block",
+          "Size": [
+            30,
+            1,
+            30
+          ],
+          "CFrame": [
+            0,
+            0.5,
+            160,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "SpawnGateW": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.72,
+            0.71,
+            0.68
+          ],
+          "Material": "Concrete",
+          "Shape": "Block",
+          "Size": [
+            2,
+            12,
+            2
+          ],
+          "CFrame": [
+            -13,
+            6,
+            148,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "SpawnGateE": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.72,
+            0.71,
+            0.68
+          ],
+          "Material": "Concrete",
+          "Shape": "Block",
+          "Size": [
+            2,
+            12,
+            2
+          ],
+          "CFrame": [
+            13,
+            6,
+            148,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "SpawnGateTop": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.72,
+            0.71,
+            0.68
+          ],
+          "Material": "Concrete",
+          "Shape": "Block",
+          "Size": [
+            28,
+            2,
+            2
+          ],
+          "CFrame": [
+            0,
+            12.5,
+            148,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "TsunamiWall": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.16,
+            0.55,
+            0.85
+          ],
+          "Material": "Glass",
+          "Shape": "Block",
+          "Size": [
+            420,
+            30,
+            6
+          ],
+          "CFrame": [
+            0,
+            14,
+            -205,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth",
+          "Transparency": 0.35
+        }
+      },
+      "TsunamiCrest": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.95,
+            0.95,
+            0.95
+          ],
+          "Material": "Neon",
+          "Shape": "Block",
+          "Size": [
+            420,
+            3,
+            6
+          ],
+          "CFrame": [
+            0,
+            30,
+            -205,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth",
+          "Transparency": 0.2
+        }
+      },
+      "PalmTrunk1": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.38,
+            0.26,
+            0.15
+          ],
+          "Material": "Wood",
+          "Shape": "Block",
+          "Size": [
+            1.8,
+            10,
+            1.8
+          ],
+          "CFrame": [
+            160,
+            5,
+            48,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PalmLeaves1": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.16,
+            0.62,
+            0.3
+          ],
+          "Material": "Grass",
+          "Shape": "Ball",
+          "Size": [
+            9,
+            4,
+            9
+          ],
+          "CFrame": [
+            160,
+            11,
+            48,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "LampPole2": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.45,
+            0.48
+          ],
+          "Material": "Metal",
+          "Shape": "Block",
+          "Size": [
+            0.6,
+            12,
+            0.6
+          ],
+          "CFrame": [
+            143,
+            6,
+            87,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "LampGlobe2": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            1,
+            0.76,
+            0.2
+          ],
+          "Material": "Neon",
+          "Shape": "Ball",
+          "Size": [
+            2.4,
+            2.4,
+            2.4
+          ],
+          "CFrame": [
+            143,
+            12.6,
+            87,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Rock3": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.52,
+            0.52,
+            0.55
+          ],
+          "Material": "Slate",
+          "Shape": "Ball",
+          "Size": [
+            5,
+            2.6,
+            4
+          ],
+          "CFrame": [
+            135,
+            1.2,
+            -80,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PalmTrunk4": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.38,
+            0.26,
+            0.15
+          ],
+          "Material": "Wood",
+          "Shape": "Block",
+          "Size": [
+            1.8,
+            10,
+            1.8
+          ],
+          "CFrame": [
+            75,
+            5,
+            158,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PalmLeaves4": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.16,
+            0.62,
+            0.3
+          ],
+          "Material": "Grass",
+          "Shape": "Ball",
+          "Size": [
+            9,
+            4,
+            9
+          ],
+          "CFrame": [
+            75,
+            11,
+            158,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "LampPole5": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.45,
+            0.48
+          ],
+          "Material": "Metal",
+          "Shape": "Block",
+          "Size": [
+            0.6,
+            12,
+            0.6
+          ],
+          "CFrame": [
+            -30,
+            6,
+            -170,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "LampGlobe5": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            1,
+            0.76,
+            0.2
+          ],
+          "Material": "Neon",
+          "Shape": "Ball",
+          "Size": [
+            2.4,
+            2.4,
+            2.4
+          ],
+          "CFrame": [
+            -30,
+            12.6,
+            -170,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Rock6": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.52,
+            0.52,
+            0.55
+          ],
+          "Material": "Slate",
+          "Shape": "Ball",
+          "Size": [
+            5,
+            2.6,
+            4
+          ],
+          "CFrame": [
+            115,
+            1.2,
+            134,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PalmTrunk7": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.38,
+            0.26,
+            0.15
+          ],
+          "Material": "Wood",
+          "Shape": "Block",
+          "Size": [
+            1.8,
+            10,
+            1.8
+          ],
+          "CFrame": [
+            -56,
+            5,
+            43,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PalmLeaves7": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.16,
+            0.62,
+            0.3
+          ],
+          "Material": "Grass",
+          "Shape": "Ball",
+          "Size": [
+            9,
+            4,
+            9
+          ],
+          "CFrame": [
+            -56,
+            11,
+            43,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "LampPole8": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.45,
+            0.48
+          ],
+          "Material": "Metal",
+          "Shape": "Block",
+          "Size": [
+            0.6,
+            12,
+            0.6
+          ],
+          "CFrame": [
+            -13,
+            6,
+            -180,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "LampGlobe8": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            1,
+            0.76,
+            0.2
+          ],
+          "Material": "Neon",
+          "Shape": "Ball",
+          "Size": [
+            2.4,
+            2.4,
+            2.4
+          ],
+          "CFrame": [
+            -13,
+            12.6,
+            -180,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Rock9": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.52,
+            0.52,
+            0.55
+          ],
+          "Material": "Slate",
+          "Shape": "Ball",
+          "Size": [
+            5,
+            2.6,
+            4
+          ],
+          "CFrame": [
+            -167,
+            1.2,
+            -111,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PalmTrunk10": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.38,
+            0.26,
+            0.15
+          ],
+          "Material": "Wood",
+          "Shape": "Block",
+          "Size": [
+            1.8,
+            10,
+            1.8
+          ],
+          "CFrame": [
+            -154,
+            5,
+            125,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PalmLeaves10": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.16,
+            0.62,
+            0.3
+          ],
+          "Material": "Grass",
+          "Shape": "Ball",
+          "Size": [
+            9,
+            4,
+            9
+          ],
+          "CFrame": [
+            -154,
+            11,
+            125,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "LampPole11": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.45,
+            0.48
+          ],
+          "Material": "Metal",
+          "Shape": "Block",
+          "Size": [
+            0.6,
+            12,
+            0.6
+          ],
+          "CFrame": [
+            174,
+            6,
+            -76,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "LampGlobe11": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            1,
+            0.76,
+            0.2
+          ],
+          "Material": "Neon",
+          "Shape": "Ball",
+          "Size": [
+            2.4,
+            2.4,
+            2.4
+          ],
+          "CFrame": [
+            174,
+            12.6,
+            -76,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Rock12": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.52,
+            0.52,
+            0.55
+          ],
+          "Material": "Slate",
+          "Shape": "Ball",
+          "Size": [
+            5,
+            2.6,
+            4
+          ],
+          "CFrame": [
+            186,
+            1.2,
+            -32,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PalmTrunk13": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.38,
+            0.26,
+            0.15
+          ],
+          "Material": "Wood",
+          "Shape": "Block",
+          "Size": [
+            1.8,
+            10,
+            1.8
+          ],
+          "CFrame": [
+            -162,
+            5,
+            167,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PalmLeaves13": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.16,
+            0.62,
+            0.3
+          ],
+          "Material": "Grass",
+          "Shape": "Ball",
+          "Size": [
+            9,
+            4,
+            9
+          ],
+          "CFrame": [
+            -162,
+            11,
+            167,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "LampPole14": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.45,
+            0.48
+          ],
+          "Material": "Metal",
+          "Shape": "Block",
+          "Size": [
+            0.6,
+            12,
+            0.6
+          ],
+          "CFrame": [
+            -71,
+            6,
+            97,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "LampGlobe14": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            1,
+            0.76,
+            0.2
+          ],
+          "Material": "Neon",
+          "Shape": "Ball",
+          "Size": [
+            2.4,
+            2.4,
+            2.4
+          ],
+          "CFrame": [
+            -71,
+            12.6,
+            97,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Rock15": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.52,
+            0.52,
+            0.55
+          ],
+          "Material": "Slate",
+          "Shape": "Ball",
+          "Size": [
+            5,
+            2.6,
+            4
+          ],
+          "CFrame": [
+            -20,
+            1.2,
+            -130,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PalmTrunk16": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.38,
+            0.26,
+            0.15
+          ],
+          "Material": "Wood",
+          "Shape": "Block",
+          "Size": [
+            1.8,
+            10,
+            1.8
+          ],
+          "CFrame": [
+            -110,
+            5,
+            190,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PalmLeaves16": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.16,
+            0.62,
+            0.3
+          ],
+          "Material": "Grass",
+          "Shape": "Ball",
+          "Size": [
+            9,
+            4,
+            9
+          ],
+          "CFrame": [
+            -110,
+            11,
+            190,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "LampPole17": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.45,
+            0.48
+          ],
+          "Material": "Metal",
+          "Shape": "Block",
+          "Size": [
+            0.6,
+            12,
+            0.6
+          ],
+          "CFrame": [
+            59,
+            6,
+            -82,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "LampGlobe17": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            1,
+            0.76,
+            0.2
+          ],
+          "Material": "Neon",
+          "Shape": "Ball",
+          "Size": [
+            2.4,
+            2.4,
+            2.4
+          ],
+          "CFrame": [
+            59,
+            12.6,
+            -82,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Rock18": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.52,
+            0.52,
+            0.55
+          ],
+          "Material": "Slate",
+          "Shape": "Ball",
+          "Size": [
+            5,
+            2.6,
+            4
+          ],
+          "CFrame": [
+            75,
+            1.2,
+            97,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PalmTrunk19": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.38,
+            0.26,
+            0.15
+          ],
+          "Material": "Wood",
+          "Shape": "Block",
+          "Size": [
+            1.8,
+            10,
+            1.8
+          ],
+          "CFrame": [
+            -176,
+            5,
+            -22,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PalmLeaves19": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.16,
+            0.62,
+            0.3
+          ],
+          "Material": "Grass",
+          "Shape": "Ball",
+          "Size": [
+            9,
+            4,
+            9
+          ],
+          "CFrame": [
+            -176,
+            11,
+            -22,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "LampPole20": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.45,
+            0.48
+          ],
+          "Material": "Metal",
+          "Shape": "Block",
+          "Size": [
+            0.6,
+            12,
+            0.6
+          ],
+          "CFrame": [
+            -51,
+            6,
+            -50,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "LampGlobe20": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            1,
+            0.76,
+            0.2
+          ],
+          "Material": "Neon",
+          "Shape": "Ball",
+          "Size": [
+            2.4,
+            2.4,
+            2.4
+          ],
+          "CFrame": [
+            -51,
+            12.6,
+            -50,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Rock21": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.52,
+            0.52,
+            0.55
+          ],
+          "Material": "Slate",
+          "Shape": "Ball",
+          "Size": [
+            5,
+            2.6,
+            4
+          ],
+          "CFrame": [
+            91,
+            1.2,
+            -142,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PalmTrunk22": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.38,
+            0.26,
+            0.15
+          ],
+          "Material": "Wood",
+          "Shape": "Block",
+          "Size": [
+            1.8,
+            10,
+            1.8
+          ],
+          "CFrame": [
+            61,
+            5,
+            -165,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PalmLeaves22": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.16,
+            0.62,
+            0.3
+          ],
+          "Material": "Grass",
+          "Shape": "Ball",
+          "Size": [
+            9,
+            4,
+            9
+          ],
+          "CFrame": [
+            61,
+            11,
+            -165,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "LampPole23": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.45,
+            0.48
+          ],
+          "Material": "Metal",
+          "Shape": "Block",
+          "Size": [
+            0.6,
+            12,
+            0.6
+          ],
+          "CFrame": [
+            46,
+            6,
+            -147,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "LampGlobe23": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            1,
+            0.76,
+            0.2
+          ],
+          "Material": "Neon",
+          "Shape": "Ball",
+          "Size": [
+            2.4,
+            2.4,
+            2.4
+          ],
+          "CFrame": [
+            46,
+            12.6,
+            -147,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Rock24": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.52,
+            0.52,
+            0.55
+          ],
+          "Material": "Slate",
+          "Shape": "Ball",
+          "Size": [
+            5,
+            2.6,
+            4
+          ],
+          "CFrame": [
+            -24,
+            1.2,
+            -70,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PalmTrunk25": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.38,
+            0.26,
+            0.15
+          ],
+          "Material": "Wood",
+          "Shape": "Block",
+          "Size": [
+            1.8,
+            10,
+            1.8
+          ],
+          "CFrame": [
+            -29,
+            5,
+            -188,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "PalmLeaves25": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.16,
+            0.62,
+            0.3
+          ],
+          "Material": "Grass",
+          "Shape": "Ball",
+          "Size": [
+            9,
+            4,
+            9
+          ],
+          "CFrame": [
+            -29,
+            11,
+            -188,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "LampPole26": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.45,
+            0.48
+          ],
+          "Material": "Metal",
+          "Shape": "Block",
+          "Size": [
+            0.6,
+            12,
+            0.6
+          ],
+          "CFrame": [
+            -132,
+            6,
+            -18,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "LampGlobe26": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            1,
+            0.76,
+            0.2
+          ],
+          "Material": "Neon",
+          "Shape": "Ball",
+          "Size": [
+            2.4,
+            2.4,
+            2.4
+          ],
+          "CFrame": [
+            -132,
+            12.6,
+            -18,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Crate1": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.3,
+            0.18
+          ],
+          "Material": "Wood",
+          "Shape": "Block",
+          "Size": [
+            4,
+            4,
+            4
+          ],
+          "CFrame": [
+            -34,
+            4.2,
+            26,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Crate2": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.3,
+            0.18
+          ],
+          "Material": "Wood",
+          "Shape": "Block",
+          "Size": [
+            4,
+            4,
+            4
+          ],
+          "CFrame": [
+            -28,
+            4.2,
+            26,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Crate3": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.3,
+            0.18
+          ],
+          "Material": "Wood",
+          "Shape": "Block",
+          "Size": [
+            4,
+            4,
+            4
+          ],
+          "CFrame": [
+            -22,
+            4.2,
+            26,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Crate4": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.45,
+            0.3,
+            0.18
+          ],
+          "Material": "Wood",
+          "Shape": "Block",
+          "Size": [
+            4,
+            4,
+            4
+          ],
+          "CFrame": [
+            -16,
+            4.2,
+            26,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "SpawnPad": {
+        "$className": "SpawnLocation",
+        "$properties": {
+          "Anchored": true,
+          "Color": [
+            0.95,
+            0.95,
+            0.95
+          ],
+          "Duration": 0,
+          "Neutral": true,
+          "Size": [
+            12,
+            1,
+            12
+          ],
+          "CFrame": [
+            0,
+            1.5,
+            160,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "TopSurface": "Smooth",
+          "Transparency": 0.15
+        }
+      }
+    },
+    "Lighting": {
+      "$properties": {
+        "Ambient": [
+          0.28,
+          0.3,
+          0.36
+        ],
+        "OutdoorAmbient": [
+          0.42,
+          0.45,
+          0.52
+        ],
+        "Brightness": 2.4,
+        "ClockTime": 14.5,
+        "GlobalShadows": true,
+        "EnvironmentDiffuseScale": 0.4,
+        "EnvironmentSpecularScale": 0.35,
+        "FogColor": [
+          0.62,
+          0.78,
+          0.92
+        ],
+        "FogStart": 260,
+        "FogEnd": 620,
+        "Technology": "Future",
+        "ColorShift_Top": [
+          1,
+          0.95,
+          0.85
+        ],
+        "ColorShift_Bottom": [
+          0.35,
+          0.4,
+          0.5
+        ]
+      }
+    },
+    "SoundService": {
+      "$properties": {
+        "RespectFilteringEnabled": true
+      }
+    },
+    "Players": {
+      "$properties": {
+        "CharacterAutoLoads": true,
+        "RespawnTime": 3
+      }
+    }
+  }
+}

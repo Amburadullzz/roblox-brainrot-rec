@@ -1,0 +1,1 @@
+{"tour": 1, "steps": [{"screenshot": "1-cover.png"}, {"screenshot": "2-bazaar.png", "keys": ["W"], "wait_ms": 1800}, {"screenshot": "3-base.png", "keys": ["W"], "wait_ms": 2200}, {"screenshot": "4-tsunami.png", "wait_ms": 2500, "call": {"module": "ServerScriptService.Server.Waves", "fn": "forceWave", "arg": "warn", "on": "Server"}}]}
